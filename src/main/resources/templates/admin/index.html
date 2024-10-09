@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<header th:replace="admin/header::header-fragment"></header>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+    <!-- 引入页面头header-fragment -->
+    <div th:replace="admin/header::header-nav"></div>
+    <!-- 引入工具栏sidebar-fragment -->
+    <div th:replace="admin/sidebar::sidebar-fragment(${path})"></div>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- Main content -->
+        <div class="content">
+            <div class="card card-primary card-outline">
+                <div class="card-header">
+                    <h3 class="card-title">“宝妈购”母婴用品商城详细介绍</h3>
+                </div> <!-- /.card-body -->
+                <div class="card-body">
+                    <div class="panel panel-default">
+                        <div style="padding: 10px 0 20px 10px;">
+                            <img th:src="@{/admin/dist/img/bmg-logo.png}" style="width: 400px;height: 220px;">
+                            <p>       “宝妈购”母婴用品商城致力于为母婴和母婴产品提供商创造最方便最快捷的交流平台，
+                                同时它也是母婴用品企业及母婴用品产品中心、经销商等进行企业宣传、产品推广、寻找产品信息、人才交流的理想传媒平台。</p>
+                            <ul>
+                                <li>10年专注母婴，1800万妈妈共同的选择</li>
+                                <li>700余种大牌好物，为您提供摸得到的安心</li>
+                                <li>绝对品质保证，我们跟您一样爱您的宝贝</li>
+                                <li>商城直送，3-7天内送到您家</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <!-- 引入页脚footer-fragment -->
+    <div th:replace="admin/footer::footer-fragment"></div>
+</div>
+<!-- jQuery -->
+<script th:src="@{/admin/plugins/jquery/jquery.min.js}"></script>
+<!-- jQuery UI 1.11.4 -->
+<script th:src="@{/admin/plugins/jQueryUI/jquery-ui.min.js}"></script>
+<!-- Bootstrap 4 -->
+<script th:src="@{/admin/plugins/bootstrap/js/bootstrap.bundle.min.js}"></script>
+<!-- AdminLTE App -->
+<script th:src="@{/admin/dist/js/adminlte.min.js}"></script>
+</body>
+</html>
